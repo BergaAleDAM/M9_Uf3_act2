@@ -96,7 +96,7 @@ public class Actividad1 {
         try {
             in = new BufferedReader(new InputStreamReader(url.openStream()));
             String inputLine;
-            while (((inputLine = in.readLine()) != null) && inputLine.contains(etiqueta)) {
+            while (((inputLine = in.readLine()) != null) || inputLine.contains(etiqueta)) {
                 System.out.println(inputLine);
 
             }
